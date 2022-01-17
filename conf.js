@@ -31,12 +31,17 @@ jsproxy_config({
       ]
     },
     'cfworker': {
-      label: 'Cloudflare Worker',
+   //   label: 'Cloudflare Worker',
      // hidden: true,
+       label: '当前站点',
+    //  lines: {
+     //   [location.host]: 1,
+    //  }
       lines: [
         // 实验中...
         // 参考 https://github.com/EtherDream/jsproxy/tree/master/cf-worker
-        'node-cfworker.etherdream.com:8443'
+       // 'node-cfworker.etherdream.com:8443'
+        'location.host'
       ]
     }
   },
